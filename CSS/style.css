@@ -1,0 +1,132 @@
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body{
+      font-size: 15px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 400;
+    }
+
+    .container{
+      margin: 4em 2em;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .card{
+      padding: 2.5em;
+      height: auto;
+      max-height: 600px;
+      min-height: 370px;
+      min-width: 224px;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .card h1{
+      text-transform: uppercase;
+      font-family: 'Big Shoulders Display', cursive;
+    }
+
+    .card-1{
+      border-radius: 0.5em 0.5em 0 0;
+    }
+
+    .card-2{
+
+    }
+
+    .card-3{
+      border-radius: 0 0 0.5em 0.5em;
+    }
+
+    .bg-orange{
+      background:hsl(31, 77%, 52%);
+    }
+
+    .text-orange{
+      color: hsl(31, 77%, 52%);
+    }
+
+    .bg-cyan{
+      background:hsl(184, 100%, 22%);
+    }
+
+    .text-cyan{
+      color: hsl(184, 100%, 22%);
+    }
+
+    .bg-dark-cyan{
+      background:hsl(179, 100%, 13%);
+    }
+
+    .text-dark-cyan{
+      color: hsl(179, 100%, 13%);
+    }
+
+    .text-muted{
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    .text-white{
+      color:hsl(0, 0%, 95%);
+    }
+
+    .btn{
+      display: inline-block;
+      background: hsl(0, 0%, 95%);
+      text-decoration: none;
+      border:0.1em solid hsl(0, 0%, 95%);
+      border-radius: 100vh;
+      padding: .8em 1.6em;
+      margin-top: auto;
+    }
+
+    a.btn:hover,
+    a.btn:focus{
+      background: transparent;
+      color: hsl(0, 0%, 95%);
+    }
+
+    @media (min-width: 1290px) {
+      .container{
+        flex-direction: row;
+        margin:4em 17em;
+      }
+
+      .card{
+        height: 60vh;
+        width: 100%;
+        padding: 3em;
+        max-width: 400px;
+
+      }
+
+      .card-1 {
+        border-radius: 0.5em 0 0 0.5em;
+      }
+
+      .card-3{
+      border-radius: 0 0.5em 0.5em 0;
+    }
+
+      h1 {
+          font-size: 3em;
+      }
+
+      p, a{
+        font-size: 1.1em;
+      }
+
+    }
